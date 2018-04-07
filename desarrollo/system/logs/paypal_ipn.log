@@ -1,0 +1,24 @@
+[01/19/2018 12:33 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=1.00, protection_eligibility=Eligible, address_status=confirmed, payer_id=SLQBGV28DEAB8, address_street=1 Main St, payment_date=19:33:34 Jan 18, 2018 PST, payment_status=Completed, charset=windows-1252, address_zip=95131, first_name=Ntmillion, mc_fee=0.33, address_country_code=US, address_name=Ntmillion Dev's Test Store, notify_version=3.8, custom=miguellop, payer_status=unverified, business=ntmillion.dev-facilitator@gmail.com, address_country=United States, address_city=San Jose, quantity=1, verify_sign=AdTGBgLJqHB6BwcvxY6ANgjjL6RcAagbQ2DcC8hfOel5e662JFdrbu2h, payer_email=ntmillion.dev@gmail.com, txn_id=9MS88459KP882333U, payment_type=instant, payer_business_name=Ntmillion Dev's Test Store, last_name=Dev, address_state=CA, receiver_email=ntmillion.dev-facilitator@gmail.com, payment_fee=0.33, receiver_id=RBD96NG3NE4L6, txn_type=web_accept, item_name=Subscripcion, mc_currency=USD, item_number=1, residence_country=US, test_ipn=1, transaction_subject=, payment_gross=1.00, ipn_track_id=2e2a087898835, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+
+[01/19/2018 12:42 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=1.00, protection_eligibility=Eligible, address_status=confirmed, payer_id=SLQBGV28DEAB8, address_street=1 Main St, payment_date=19:42:34 Jan 18, 2018 PST, payment_status=Completed, charset=windows-1252, address_zip=95131, first_name=Ntmillion, mc_fee=0.33, address_country_code=US, address_name=Ntmillion Dev's Test Store, notify_version=3.8, custom=miguellop, payer_status=unverified, business=ntmillion.dev-facilitator@gmail.com, address_country=United States, address_city=San Jose, quantity=1, verify_sign=APU5Gc2o-mkIsJ7VcUd4lnA5Z91qAh5e2ul0qdblNQtO0kqltNUZHTOn, payer_email=ntmillion.dev@gmail.com, txn_id=9BR1106678410814R, payment_type=instant, payer_business_name=Ntmillion Dev's Test Store, last_name=Dev, address_state=CA, receiver_email=ntmillion.dev-facilitator@gmail.com, payment_fee=0.33, receiver_id=RBD96NG3NE4L6, txn_type=web_accept, item_name=Subscripcion, mc_currency=USD, item_number=1, residence_country=US, test_ipn=1, transaction_subject=, payment_gross=1.00, ipn_track_id=87b638d9c8f4b, 
+IPN Response from Paypal Server:
+ HTTP/1.0 302 Found
+Location: https://www.sandbox.paypal.com
+Server: BigIP
+Connection: close
+Content-Length: 0
+
+
+

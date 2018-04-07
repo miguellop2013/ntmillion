@@ -1,0 +1,384 @@
+@import url("bootstrap.min.css");
+@import url("bootstrap-grid.min.css");
+@import url("bootstrap-reboot.min.css");
+@import url("font-awesome.min.css");
+
+body{
+	background: #e9ebee;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+@font-face {
+	font-family:'Open Sans';
+	src:url(fonts/OpenSans.ttf);
+}
+@font-face {
+	font-family:'Roboto';
+	src:url(fonts/Roboto.ttf);
+}
+a{color:#1176b6;}
+a:hover{text-decoration: underline;}
+
+/* --- Header -- */
+
+header{
+	background: #1176b6;
+	padding: 10px 0;
+}
+
+/* --- Logo --- */
+header .logo img{
+	height: 22px;
+}
+
+/* --- Buscar --- */
+header .buscar  form input[type="text"]{
+	width: 100%;
+	background: #fff;
+	border:none;
+	font-size: 12px;
+	padding: 0 10px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 3px 0 0 3px;
+	font-family: 'Open Sans', sans-serif;
+	color: #6d6d6d;
+}
+header .buscar  form  button{
+	width: 100%;
+	background: #fff;
+	border: none;
+	font-size: 12px;
+	padding: 0 10px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 0 3px 3px 0;
+	cursor: pointer;
+	color: #6d6d6d;
+}
+header .buscar  form  button:hover{
+	background: #099efc;
+	color: #fff;
+}
+
+/* --- Menu --- */
+header .menu{
+	padding: 0;
+
+}
+header .menu a{
+	color: rgba(255,255,255,.8);
+	text-decoration: none;
+}
+header .menu a:hover{
+	color: white;
+}
+header .menu .imagen{
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+}
+header .menu .imagen {
+	border-radius: 100px;
+}
+
+/* --- Barra Lateral Izquierda --- */
+main{
+	padding-top: 25px;
+}
+main .barra-lateral-izq{
+	padding-bottom: 10px;
+	padding-left: 0;
+}
+main .borr{
+	border-right: 1px solid #c7c8ca;
+}
+main h1.name-users{
+	font-weight: 700;
+	font-size: 1.8em;	
+}
+main .barra-lateral-izq .image-profile{
+	width: 225px;
+	height: 240px;
+}
+main .barra-lateral-izq .image-profile img{
+	max-width: 100%;
+}
+main .barra-lateral-izq nav{
+	border-bottom: 1px solid #c7c8ca;
+	padding: 20px;
+}
+main .barra-lateral-izq nav a{
+	display: block;
+	padding: 3px;
+	font-family: 'Roboto';
+	color: #3d3c3c;
+
+}
+main .barra-lateral-izq nav a:hover{
+	background: #f2f2f2;
+	text-decoration: none;
+}
+main .barra-lateral-izq nav a .fa{
+	margin-right: 10px;
+}
+
+/* --- Contenido Principal --- */
+
+ main .contenido-principal .publicar{
+ 	margin-bottom: 20px;
+ }
+ main .contenido-principal .publicar .foto{
+ 	padding-left: 15px;
+ }
+ main .contenido-principal .publicar .foto a{
+ 	width: 70px;
+ 	height: 70px;
+ 	display: inline-block;
+ 	overflow: hidden;
+ 	border-radius: 100px;
+ 	margin-top: 20px;
+ }
+ main .contenido-principal .publicar .foto img{
+	width: 100%;
+ }
+ main .contenido-principal .publicar form textarea{
+ 	width: 100%;
+ 	min-width: 100px;
+ 	min-height: 100px;
+ 	max-height: 300px;
+ 	resize: none;
+ 	padding: 15px;
+ 	font-size: 16px;
+ 	font-family: 'Open Sans';
+ 	color: #565656;
+ 	box-shadow: 0px 2px 2px 0px  rgba(0,0,0,.35);
+ 	border: 0;
+ }
+main .contenido-principal .publicar form .contenedor-botones{
+  	padding: 20px 0;
+  	border-bottom: 1px solid #c7c8ca;
+  }
+
+main .contenido-principal .publicar form .contenedor-botones a{
+   	color: #8d8d8d;
+   	font-size: 20px;
+   	margin-right: 10px;
+}
+main .contenido-principal .publicar form .contenedor-botones a:hover{
+   	color: #3d3c3c;
+}
+main .contenido-principal .publicar form button{
+	border: 1px solid #00609c;
+	padding: 5px 30px;
+	font-size: 14px;
+	font-family: 'Roboto';
+	background: linear-gradient(to bottom, #1a87cd 0%, #1176b6 100%);
+	color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+}
+main .contenido-principal .publicar form button:hover{
+	background: linear-gradient(to bottom, #1176b6 100%, #1a87cd 0%);	
+}
+/*  Publicaciones */
+main .contenido-principal .publicacion .card-header .p-usuario h5{
+	font-size: 15px;
+	font-weight: 700;
+}
+main .contenido-principal .publicacion .card-header .p-usuario .text-muted{
+	font-size: 12px;
+	font-weight: 300;
+}
+main .contenido-principal .publicacion .card-body{
+	width: 100%;
+	height: 614px;
+	display: block;
+ 	overflow: hidden;
+}
+main .contenido-principal .publicacion .card-body img{
+	width: 100%;
+	height: 100%;
+}
+main .contenido-principal .publicacion .card-footer{
+	background: white;
+}
+main .contenido-principal .publicacion .card-footer .comentarios{
+	font-size: 14px;
+}
+main .contenido-principal .publicacion .card-header .p-usuario .foto-u,
+main .contenido-principal .publicacion .card-footer .comentarios .foto-c{
+	width: 50px;
+ 	height: 50px;
+ 	display: inline-block;
+ 	overflow: hidden;
+ 	border-radius: 100px;
+}
+main .contenido-principal .publicacion .card-header .p-usuario .foto-u img,
+main .contenido-principal .publicacion .card-footer .comentarios .foto-c img{
+	width: 100%;
+}
+main .contenido-principal .publicacion .card-footer .usuario-name{
+	font-weight: 700;
+}
+main .contenido-principal .publicacion .card-footer .form-control{
+	border-top: 1px solid #ccc;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	resize: none;
+	background: transparent;
+	transform: all .6s ease-out;
+
+}
+main .contenido-principal .publicacion .card-footer .form-control:focus{
+	border-top: 1px solid #0069d9;
+	box-shadow: 0 !important;
+}
+
+/* Emojim */
+main .contenido-principal .publicacion .card-footer .emojionearea .emojionearea-editor {
+    min-height: 5em;
+    max-height: 8em;
+    overflow: auto;
+    padding: 6px 24px 6px 12px;
+    line-height: 1.42857143;
+    color: #424242;
+}
+main .contenido-principal .publicacion .card-footer .emojionearea.focused {
+    border-color: #0069d9 !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+/* ==== Mediaquery === */
+
+@media screen and (max-width: 767px) {
+	main .btn-menu{
+		display: block;
+		bottom: 1px solid #00609c;
+		padding: 5px 10px;
+		font-size: 14px;
+		background: linear-gradient(to bottom, #1a87cd 0%, #1176b6 100%);
+		color: white;
+		border-radius: 3px;
+		cursor: pointer;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	main .btn-menu:hover{
+		background: #0d659d;
+		text-decoration: none;
+	}
+	main .fondo-enlace{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		cursor: pointer;
+		background: rgba(0,0,0,.5);
+		z-index: 99;
+		display: none;
+	}
+	main  .fondo-enlace.active{
+		display: block;
+	}
+	main .barra-lateral-izq{
+		width: 85%;
+		position: fixed;
+		background: rgba(0,0,0,.85);
+		z-index: 100;
+		top: 0;
+		left: 0;
+		padding: 0;
+		margin: 0;
+		height: 100vh;
+		transform: translateX(-100%);
+		transition: all .3s ease;
+		overflow: scroll;
+	}
+	main .barra-lateral-izq.active{
+		transform: translateX(0%);
+	}
+	main .barra-lateral-izq nav{
+		border-bottom: none;
+	}
+	main .barra-lateral-izq nav a{
+		padding: 20px;
+		color: white;
+	}
+	main .barra-lateral-izq nav a:hover{
+		color: #3d3c3c;
+		background: #fff;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	header .menu{
+		padding: 13px 15px 0px 15px;
+	}
+	main .contenido-principal .publicar .foto a{
+		width: 40px;
+		height: 40px;
+		margin: 0;
+	}
+
+	main .publicaion .foto a{
+		width: 40px;
+		height: 40px;
+	}
+	main .contenido-principal .publicacion .card-body{
+		height: 400px;
+	}
+}
+@media screen and (max-width: 320px){
+	main .contenido-principal .publicar .foto{
+		display: none;
+	}
+}
+
+/* input file */
+ .inputfile {
+    font-size: 5px;
+	position: absolute;
+	left: 12px;
+	top: 125px;
+	opacity: 0;
+	width: 48px;
+	height: 47px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.inputfile + label {
+	max-width: 100%;
+	font-size: 1.3rem;
+	font-weight: 700;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+	display: inline-block;
+	overflow: hidden;
+	padding: .1rem .8rem;
+	text-align: center;
+}
+.no-js .inputfile + label {
+    display: none;
+}
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: none;
+}
+.inputfile + label span {
+   font-size: .6em;
+}
+/* style 5 */
+.inputfile-5 + label {
+    color: #1a87cd;
+}
+.inputfile-5:hover + label,
+.inputfile-5:focus + label,
+.inputfile-5.has-focus + label,
+.inputfile-5 + label:hover {
+    color: #1176b6;
+}
+

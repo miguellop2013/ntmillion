@@ -1,0 +1,235 @@
+@import url("bootstrap.min.css");
+@import url("font-awesome.min.css");
+@import url("animate.min.css");
+@font-face {
+  font-family:'LobsterTwo';
+  src:url(fonts/LobsterTwo.ttf);
+}
+@font-face {
+  font-family:'HammersmithOne';
+  src:url(fonts/HammersmithOne.ttf);
+}
+html {
+  position: relative;
+  min-height: 100%; 
+}
+body {
+  overflow-x: hidden;
+}
+#Home{
+  padding: 0 !important;
+  background: none !important;
+}
+.navegacion{
+  width: 100%;
+  background: transparent;
+  z-index: 10;
+  transition: all 1s ease;
+}
+.navegacion .nav-link{
+  font-weight: 400;
+  color: white;
+  border-bottom: 2px solid transparent;
+  transition: all .5s ease; 
+}
+.navegacion .nav-link:hover{
+  color: white;
+  border-bottom: 2px solid white;
+}
+.navegacion .log-in{
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #66BB6A;
+  border-bottom: 2px solid transparent;
+  transition: all .5s ease;
+}
+.navegacion .log-in:hover{
+  color: #43A047;
+  border-bottom: 2px solid #43A047;
+}
+/* TOP */
+.bg-inverse{
+  background: #424242 !important;
+}
+.bg-inverse .nav-link{
+  font-weight: 400;
+  color:white;
+  border-bottom: 2px solid transparent;
+  transition: all .5s ease; 
+}
+.bg-inverse .nav-link:hover{
+  color: white;
+  border-bottom: 2px solid white;
+}
+.bg-inverse .log-in{
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #66BB6A;
+  border-bottom: 2px solid transparent;
+  transition: all .5s ease;
+}
+.bg-inverse .log-in:hover{
+  color: #43A047;
+  border-bottom: 2px solid #43A047;
+}
+.carousel-fade .carousel-inner .carousel-item {
+  opacity: 1;
+  transition-property: opacity;
+    overflow:hidden;
+}
+.carousel-item.active img {
+  transition: transform 7000ms linear 0s;
+  transform: scale(1.05, 1.05);
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 1;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-caption{
+  bottom: 231px !important;
+}
+.modal-login {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+}
+.modal-login .modal-header{
+  background: url(../img/bg-modal.jpg);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  display: inline;
+  padding: 3em;
+  border: 0;
+  border-radius: 0;
+}
+.modal-login .modal-header h5{
+  text-align: center !important;
+  font-size: 2.6rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #fff;
+}
+.modal-login .modal-header p{
+  font-size: 1.6em;
+  font-family:'LobsterTwo';
+  text-align: center !important;
+  color: #fff;
+}
+.modal-login .modal-header .close {
+    padding: 15px;
+    margin: 0;
+    color: rgba(255,255,255,.4);
+    font-size: 17px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.modal-login .modal-header .close:focus, 
+.modal-login .modal-header .close:hover {
+    color: #fff;
+    text-decoration: none;
+}
+button[type="submit"]{
+  cursor: pointer;
+}
+.etiqueta .line{
+  height: 2px;
+  background:  #007bff;
+}
+.etiqueta h1,
+.etiqueta2 h1{
+  text-align: center;
+  font-family:'HammersmithOne';
+  font-size: 3.3em;
+}
+.etiqueta2 h1{
+  color: white;
+}
+.form-control {
+  color: #888888;
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid #f8f8f8;
+  background-color: #f8f8f8;
+  transition: all .5s ease-out;
+}
+.form-control:focus {
+  border: 1px solid #ECECEE;
+  background-color: transparent;
+  color: #888888;
+  outline: 0;
+  box-shadow: none;
+  transition: all .5s ease-out;
+} 
+.form-regis .col-form-label{
+  font-size: 13px;
+  font-weight: 600;
+  color: #888;
+}
+.image-registrar{
+  background: url(../img/registrar.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: bottom;
+}
+/* Nosotros */
+.nosotros .image{
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  max-width: 100%;
+  height: auto;
+}
+#img-1{ background: url(../img/foto-persons.jpg);}
+#img-2{background: url(../img/foto-persons2.jpg);}
+/* Servicios */
+.servicios{
+  background: url(../img/bg-servicios.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 56%;
+  background-size: cover;
+}
+.servicios .card{
+  background: rgba(0,0,0,.3);
+  color: white
+}
+.servicios .card .fa{
+  font-size: 2.6em;
+}
+.servicios .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+footer.footer{
+  background-color: #f5f5f5;
+}
+footer.footer .nav{
+  background: transparent !important;
+}
+footer.footer .nav .nav-link{
+  color: #868e96 !important;
+  font-size: 13px; 
+}
+footer.footer .nav .nav-link.active{
+  font-weight: 700;
+}
+footer.footer .copyright{
+  font-size: 13px; 
+}
